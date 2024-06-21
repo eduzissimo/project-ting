@@ -25,3 +25,7 @@ class Queue(AbstractQueue):
             raise IndexError("Índice Inválido ou Inexistente")
         return self._items[index]
     # busca
+
+    def is_empty(self):
+        return len(self._items) == 0
+    # verifica se a fila está vazia
